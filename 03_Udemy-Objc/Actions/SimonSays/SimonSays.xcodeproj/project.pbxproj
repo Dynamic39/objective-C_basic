@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC2262952084740600086EF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2262942084740600086EF3 /* AppDelegate.m */; };
+		FC2262982084740600086EF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2262972084740600086EF3 /* ViewController.m */; };
+		FC22629B2084740600086EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2262992084740600086EF3 /* Main.storyboard */; };
+		FC22629D2084740700086EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22629C2084740700086EF3 /* Assets.xcassets */; };
+		FC2262A02084740700086EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC22629E2084740700086EF3 /* LaunchScreen.storyboard */; };
+		FC2262A32084740700086EF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2262A22084740700086EF3 /* main.m */; };
+		FC2262AD2084740800086EF3 /* SimonSaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2262AC2084740800086EF3 /* SimonSaysTests.m */; };
+		FC2262B82084740800086EF3 /* SimonSaysUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2262B72084740800086EF3 /* SimonSaysUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC2262A92084740800086EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2262882084740600086EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC22628F2084740600086EF3;
+			remoteInfo = SimonSays;
+		};
+		FC2262B42084740800086EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2262882084740600086EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC22628F2084740600086EF3;
+			remoteInfo = SimonSays;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC2262902084740600086EF3 /* SimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2262932084740600086EF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC2262942084740600086EF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC2262962084740600086EF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC2262972084740600086EF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC22629A2084740600086EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC22629C2084740700086EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC22629F2084740700086EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC2262A12084740700086EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2262A22084740700086EF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC2262A82084740800086EF3 /* SimonSaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonSaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2262AC2084740800086EF3 /* SimonSaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysTests.m; sourceTree = "<group>"; };
+		FC2262AE2084740800086EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2262B32084740800086EF3 /* SimonSaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonSaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2262B72084740800086EF3 /* SimonSaysUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonSaysUITests.m; sourceTree = "<group>"; };
+		FC2262B92084740800086EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC22628D2084740600086EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2262A52084740800086EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2262B02084740800086EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC2262872084740600086EF3 = {
+			isa = PBXGroup;
+			children = (
+				FC2262922084740600086EF3 /* SimonSays */,
+				FC2262AB2084740800086EF3 /* SimonSaysTests */,
+				FC2262B62084740800086EF3 /* SimonSaysUITests */,
+				FC2262912084740600086EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC2262912084740600086EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC2262902084740600086EF3 /* SimonSays.app */,
+				FC2262A82084740800086EF3 /* SimonSaysTests.xctest */,
+				FC2262B32084740800086EF3 /* SimonSaysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC2262922084740600086EF3 /* SimonSays */ = {
+			isa = PBXGroup;
+			children = (
+				FC2262932084740600086EF3 /* AppDelegate.h */,
+				FC2262942084740600086EF3 /* AppDelegate.m */,
+				FC2262962084740600086EF3 /* ViewController.h */,
+				FC2262972084740600086EF3 /* ViewController.m */,
+				FC2262992084740600086EF3 /* Main.storyboard */,
+				FC22629C2084740700086EF3 /* Assets.xcassets */,
+				FC22629E2084740700086EF3 /* LaunchScreen.storyboard */,
+				FC2262A12084740700086EF3 /* Info.plist */,
+				FC2262A22084740700086EF3 /* main.m */,
+			);
+			path = SimonSays;
+			sourceTree = "<group>";
+		};
+		FC2262AB2084740800086EF3 /* SimonSaysTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC2262AC2084740800086EF3 /* SimonSaysTests.m */,
+				FC2262AE2084740800086EF3 /* Info.plist */,
+			);
+			path = SimonSaysTests;
+			sourceTree = "<group>";
+		};
+		FC2262B62084740800086EF3 /* SimonSaysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC2262B72084740800086EF3 /* SimonSaysUITests.m */,
+				FC2262B92084740800086EF3 /* Info.plist */,
+			);
+			path = SimonSaysUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC22628F2084740600086EF3 /* SimonSays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2262BC2084740800086EF3 /* Build configuration list for PBXNativeTarget "SimonSays" */;
+			buildPhases = (
+				FC22628C2084740600086EF3 /* Sources */,
+				FC22628D2084740600086EF3 /* Frameworks */,
+				FC22628E2084740600086EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimonSays;
+			productName = SimonSays;
+			productReference = FC2262902084740600086EF3 /* SimonSays.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC2262A72084740800086EF3 /* SimonSaysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2262BF2084740800086EF3 /* Build configuration list for PBXNativeTarget "SimonSaysTests" */;
+			buildPhases = (
+				FC2262A42084740800086EF3 /* Sources */,
+				FC2262A52084740800086EF3 /* Frameworks */,
+				FC2262A62084740800086EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2262AA2084740800086EF3 /* PBXTargetDependency */,
+			);
+			name = SimonSaysTests;
+			productName = SimonSaysTests;
+			productReference = FC2262A82084740800086EF3 /* SimonSaysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC2262B22084740800086EF3 /* SimonSaysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC2262C22084740800086EF3 /* Build configuration list for PBXNativeTarget "SimonSaysUITests" */;
+			buildPhases = (
+				FC2262AF2084740800086EF3 /* Sources */,
+				FC2262B02084740800086EF3 /* Frameworks */,
+				FC2262B12084740800086EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC2262B52084740800086EF3 /* PBXTargetDependency */,
+			);
+			name = SimonSaysUITests;
+			productName = SimonSaysUITests;
+			productReference = FC2262B32084740800086EF3 /* SimonSaysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC2262882084740600086EF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Samuel K";
+				TargetAttributes = {
+					FC22628F2084740600086EF3 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FC2262A72084740800086EF3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FC22628F2084740600086EF3;
+					};
+					FC2262B22084740800086EF3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FC22628F2084740600086EF3;
+					};
+				};
+			};
+			buildConfigurationList = FC22628B2084740600086EF3 /* Build configuration list for PBXProject "SimonSays" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC2262872084740600086EF3;
+			productRefGroup = FC2262912084740600086EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC22628F2084740600086EF3 /* SimonSays */,
+				FC2262A72084740800086EF3 /* SimonSaysTests */,
+				FC2262B22084740800086EF3 /* SimonSaysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC22628E2084740600086EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2262A02084740700086EF3 /* LaunchScreen.storyboard in Resources */,
+				FC22629D2084740700086EF3 /* Assets.xcassets in Resources */,
+				FC22629B2084740600086EF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2262A62084740800086EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2262B12084740800086EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC22628C2084740600086EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2262982084740600086EF3 /* ViewController.m in Sources */,
+				FC2262A32084740700086EF3 /* main.m in Sources */,
+				FC2262952084740600086EF3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2262A42084740800086EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2262AD2084740800086EF3 /* SimonSaysTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2262AF2084740800086EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC2262B82084740800086EF3 /* SimonSaysUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC2262AA2084740800086EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC22628F2084740600086EF3 /* SimonSays */;
+			targetProxy = FC2262A92084740800086EF3 /* PBXContainerItemProxy */;
+		};
+		FC2262B52084740800086EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC22628F2084740600086EF3 /* SimonSays */;
+			targetProxy = FC2262B42084740800086EF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC2262992084740600086EF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC22629A2084740600086EF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC22629E2084740700086EF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC22629F2084740700086EF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC2262BA2084740800086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC2262BB2084740800086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC2262BD2084740800086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = SimonSays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SimonSays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC2262BE2084740800086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = SimonSays/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SimonSays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC2262C02084740800086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = SimonSaysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SimonSaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimonSays.app/SimonSays";
+			};
+			name = Debug;
+		};
+		FC2262C12084740800086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = SimonSaysTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SimonSaysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimonSays.app/SimonSays";
+			};
+			name = Release;
+		};
+		FC2262C32084740800086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = SimonSaysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SimonSaysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimonSays;
+			};
+			name = Debug;
+		};
+		FC2262C42084740800086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = SimonSaysUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SimonSaysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimonSays;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC22628B2084740600086EF3 /* Build configuration list for PBXProject "SimonSays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2262BA2084740800086EF3 /* Debug */,
+				FC2262BB2084740800086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2262BC2084740800086EF3 /* Build configuration list for PBXNativeTarget "SimonSays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2262BD2084740800086EF3 /* Debug */,
+				FC2262BE2084740800086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2262BF2084740800086EF3 /* Build configuration list for PBXNativeTarget "SimonSaysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2262C02084740800086EF3 /* Debug */,
+				FC2262C12084740800086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC2262C22084740800086EF3 /* Build configuration list for PBXNativeTarget "SimonSaysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC2262C32084740800086EF3 /* Debug */,
+				FC2262C42084740800086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC2262882084740600086EF3 /* Project object */;
+}

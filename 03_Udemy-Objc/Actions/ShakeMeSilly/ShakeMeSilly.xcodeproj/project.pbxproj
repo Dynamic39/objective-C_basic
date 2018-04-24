@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC22620C208440D200086EF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC22620B208440D200086EF3 /* AppDelegate.m */; };
+		FC22620F208440D200086EF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC22620E208440D200086EF3 /* ViewController.m */; };
+		FC226212208440D200086EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC226210208440D200086EF3 /* Main.storyboard */; };
+		FC226217208440D300086EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC226215208440D300086EF3 /* LaunchScreen.storyboard */; };
+		FC22621A208440D300086EF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC226219208440D300086EF3 /* main.m */; };
+		FC226224208440D300086EF3 /* ShakeMeSillyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC226223208440D300086EF3 /* ShakeMeSillyTests.m */; };
+		FC22622F208440D400086EF3 /* ShakeMeSillyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC22622E208440D400086EF3 /* ShakeMeSillyUITests.m */; };
+		FC22623D2084413500086EF3 /* edosz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC22623C2084413500086EF3 /* edosz.ttf */; };
+		FC22623F208441BD00086EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC22623E208441BD00086EF3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC226220208440D300086EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2261FF208440D200086EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC226206208440D200086EF3;
+			remoteInfo = ShakeMeSilly;
+		};
+		FC22622B208440D400086EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC2261FF208440D200086EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC226206208440D200086EF3;
+			remoteInfo = ShakeMeSilly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC226207208440D200086EF3 /* ShakeMeSilly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeMeSilly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC22620A208440D200086EF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC22620B208440D200086EF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC22620D208440D200086EF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC22620E208440D200086EF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC226211208440D200086EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC226216208440D300086EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC226218208440D300086EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC226219208440D300086EF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC22621F208440D300086EF3 /* ShakeMeSillyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeMeSillyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC226223208440D300086EF3 /* ShakeMeSillyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeMeSillyTests.m; sourceTree = "<group>"; };
+		FC226225208440D400086EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC22622A208440D400086EF3 /* ShakeMeSillyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeMeSillyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC22622E208440D400086EF3 /* ShakeMeSillyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeMeSillyUITests.m; sourceTree = "<group>"; };
+		FC226230208440D400086EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC22623C2084413500086EF3 /* edosz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = edosz.ttf; sourceTree = "<group>"; };
+		FC22623E208441BD00086EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC226204208440D200086EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC22621C208440D300086EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC226227208440D400086EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC2261FE208440D200086EF3 = {
+			isa = PBXGroup;
+			children = (
+				FC226209208440D200086EF3 /* ShakeMeSilly */,
+				FC226222208440D300086EF3 /* ShakeMeSillyTests */,
+				FC22622D208440D400086EF3 /* ShakeMeSillyUITests */,
+				FC226208208440D200086EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC226208208440D200086EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC226207208440D200086EF3 /* ShakeMeSilly.app */,
+				FC22621F208440D300086EF3 /* ShakeMeSillyTests.xctest */,
+				FC22622A208440D400086EF3 /* ShakeMeSillyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC226209208440D200086EF3 /* ShakeMeSilly */ = {
+			isa = PBXGroup;
+			children = (
+				FC22620A208440D200086EF3 /* AppDelegate.h */,
+				FC22620B208440D200086EF3 /* AppDelegate.m */,
+				FC22620D208440D200086EF3 /* ViewController.h */,
+				FC22620E208440D200086EF3 /* ViewController.m */,
+				FC226210208440D200086EF3 /* Main.storyboard */,
+				FC226215208440D300086EF3 /* LaunchScreen.storyboard */,
+				FC226218208440D300086EF3 /* Info.plist */,
+				FC226219208440D300086EF3 /* main.m */,
+				FC22623E208441BD00086EF3 /* Assets.xcassets */,
+				FC22623C2084413500086EF3 /* edosz.ttf */,
+			);
+			path = ShakeMeSilly;
+			sourceTree = "<group>";
+		};
+		FC226222208440D300086EF3 /* ShakeMeSillyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC226223208440D300086EF3 /* ShakeMeSillyTests.m */,
+				FC226225208440D400086EF3 /* Info.plist */,
+			);
+			path = ShakeMeSillyTests;
+			sourceTree = "<group>";
+		};
+		FC22622D208440D400086EF3 /* ShakeMeSillyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC22622E208440D400086EF3 /* ShakeMeSillyUITests.m */,
+				FC226230208440D400086EF3 /* Info.plist */,
+			);
+			path = ShakeMeSillyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC226206208440D200086EF3 /* ShakeMeSilly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC226233208440D400086EF3 /* Build configuration list for PBXNativeTarget "ShakeMeSilly" */;
+			buildPhases = (
+				FC226203208440D200086EF3 /* Sources */,
+				FC226204208440D200086EF3 /* Frameworks */,
+				FC226205208440D200086EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShakeMeSilly;
+			productName = ShakeMeSilly;
+			productReference = FC226207208440D200086EF3 /* ShakeMeSilly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC22621E208440D300086EF3 /* ShakeMeSillyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC226236208440D400086EF3 /* Build configuration list for PBXNativeTarget "ShakeMeSillyTests" */;
+			buildPhases = (
+				FC22621B208440D300086EF3 /* Sources */,
+				FC22621C208440D300086EF3 /* Frameworks */,
+				FC22621D208440D300086EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC226221208440D300086EF3 /* PBXTargetDependency */,
+			);
+			name = ShakeMeSillyTests;
+			productName = ShakeMeSillyTests;
+			productReference = FC22621F208440D300086EF3 /* ShakeMeSillyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC226229208440D400086EF3 /* ShakeMeSillyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC226239208440D400086EF3 /* Build configuration list for PBXNativeTarget "ShakeMeSillyUITests" */;
+			buildPhases = (
+				FC226226208440D400086EF3 /* Sources */,
+				FC226227208440D400086EF3 /* Frameworks */,
+				FC226228208440D400086EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC22622C208440D400086EF3 /* PBXTargetDependency */,
+			);
+			name = ShakeMeSillyUITests;
+			productName = ShakeMeSillyUITests;
+			productReference = FC22622A208440D400086EF3 /* ShakeMeSillyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC2261FF208440D200086EF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Samuel K";
+				TargetAttributes = {
+					FC226206208440D200086EF3 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FC22621E208440D300086EF3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FC226206208440D200086EF3;
+					};
+					FC226229208440D400086EF3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FC226206208440D200086EF3;
+					};
+				};
+			};
+			buildConfigurationList = FC226202208440D200086EF3 /* Build configuration list for PBXProject "ShakeMeSilly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC2261FE208440D200086EF3;
+			productRefGroup = FC226208208440D200086EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC226206208440D200086EF3 /* ShakeMeSilly */,
+				FC22621E208440D300086EF3 /* ShakeMeSillyTests */,
+				FC226229208440D400086EF3 /* ShakeMeSillyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC226205208440D200086EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC226217208440D300086EF3 /* LaunchScreen.storyboard in Resources */,
+				FC226212208440D200086EF3 /* Main.storyboard in Resources */,
+				FC22623F208441BD00086EF3 /* Assets.xcassets in Resources */,
+				FC22623D2084413500086EF3 /* edosz.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC22621D208440D300086EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC226228208440D400086EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC226203208440D200086EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC22620F208440D200086EF3 /* ViewController.m in Sources */,
+				FC22621A208440D300086EF3 /* main.m in Sources */,
+				FC22620C208440D200086EF3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC22621B208440D300086EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC226224208440D300086EF3 /* ShakeMeSillyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC226226208440D400086EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC22622F208440D400086EF3 /* ShakeMeSillyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC226221208440D300086EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC226206208440D200086EF3 /* ShakeMeSilly */;
+			targetProxy = FC226220208440D300086EF3 /* PBXContainerItemProxy */;
+		};
+		FC22622C208440D400086EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC226206208440D200086EF3 /* ShakeMeSilly */;
+			targetProxy = FC22622B208440D400086EF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC226210208440D200086EF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC226211208440D200086EF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC226215208440D300086EF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC226216208440D300086EF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC226231208440D400086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC226232208440D400086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC226234208440D400086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = ShakeMeSilly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.ShakeMeSilly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC226235208440D400086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = ShakeMeSilly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.ShakeMeSilly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC226237208440D400086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = ShakeMeSillyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.ShakeMeSillyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeMeSilly.app/ShakeMeSilly";
+			};
+			name = Debug;
+		};
+		FC226238208440D400086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = ShakeMeSillyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.ShakeMeSillyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShakeMeSilly.app/ShakeMeSilly";
+			};
+			name = Release;
+		};
+		FC22623A208440D400086EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = ShakeMeSillyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.ShakeMeSillyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShakeMeSilly;
+			};
+			name = Debug;
+		};
+		FC22623B208440D400086EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RK46U626P;
+				INFOPLIST_FILE = ShakeMeSillyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.ShakeMeSillyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShakeMeSilly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC226202208440D200086EF3 /* Build configuration list for PBXProject "ShakeMeSilly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC226231208440D400086EF3 /* Debug */,
+				FC226232208440D400086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC226233208440D400086EF3 /* Build configuration list for PBXNativeTarget "ShakeMeSilly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC226234208440D400086EF3 /* Debug */,
+				FC226235208440D400086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC226236208440D400086EF3 /* Build configuration list for PBXNativeTarget "ShakeMeSillyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC226237208440D400086EF3 /* Debug */,
+				FC226238208440D400086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC226239208440D400086EF3 /* Build configuration list for PBXNativeTarget "ShakeMeSillyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC22623A208440D400086EF3 /* Debug */,
+				FC22623B208440D400086EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC2261FF208440D200086EF3 /* Project object */;
+}

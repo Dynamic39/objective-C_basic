@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC8BBC582086D61A0068FC73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8BBC572086D61A0068FC73 /* AppDelegate.m */; };
+		FC8BBC5E2086D61A0068FC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8BBC5C2086D61A0068FC73 /* Main.storyboard */; };
+		FC8BBC602086D61E0068FC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8BBC5F2086D61E0068FC73 /* Assets.xcassets */; };
+		FC8BBC632086D61E0068FC73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8BBC612086D61E0068FC73 /* LaunchScreen.storyboard */; };
+		FC8BBC662086D61E0068FC73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8BBC652086D61E0068FC73 /* main.m */; };
+		FC8BBC6E2086D7100068FC73 /* LondonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8BBC6D2086D7100068FC73 /* LondonVC.m */; };
+		FC8BBC712086D7290068FC73 /* LondonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8BBC702086D7290068FC73 /* LondonCell.m */; };
+		FC8BBC742086E25A0068FC73 /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8BBC732086E25A0068FC73 /* DetailVC.m */; };
+		FC8BBC772086E7AB0068FC73 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8BBC762086E7AB0068FC73 /* MapKit.framework */; };
+		FC8BBC7A2086EB030068FC73 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8BBC792086EB030068FC73 /* MapPin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC8BBC532086D61A0068FC73 /* LondonLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8BBC562086D61A0068FC73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC8BBC572086D61A0068FC73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC8BBC5D2086D61A0068FC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC8BBC5F2086D61E0068FC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC8BBC622086D61E0068FC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC8BBC642086D61E0068FC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8BBC652086D61E0068FC73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC8BBC6C2086D7100068FC73 /* LondonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LondonVC.h; sourceTree = "<group>"; };
+		FC8BBC6D2086D7100068FC73 /* LondonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LondonVC.m; sourceTree = "<group>"; };
+		FC8BBC6F2086D7290068FC73 /* LondonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LondonCell.h; sourceTree = "<group>"; };
+		FC8BBC702086D7290068FC73 /* LondonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LondonCell.m; sourceTree = "<group>"; };
+		FC8BBC722086E25A0068FC73 /* DetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
+		FC8BBC732086E25A0068FC73 /* DetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
+		FC8BBC762086E7AB0068FC73 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FC8BBC782086EB030068FC73 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		FC8BBC792086EB030068FC73 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC8BBC502086D61A0068FC73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8BBC772086E7AB0068FC73 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC8BBC4A2086D61A0068FC73 = {
+			isa = PBXGroup;
+			children = (
+				FC8BBC552086D61A0068FC73 /* LondonLM */,
+				FC8BBC542086D61A0068FC73 /* Products */,
+				FC8BBC752086E7AB0068FC73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8BBC542086D61A0068FC73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC8BBC532086D61A0068FC73 /* LondonLM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC8BBC552086D61A0068FC73 /* LondonLM */ = {
+			isa = PBXGroup;
+			children = (
+				FC8BBC562086D61A0068FC73 /* AppDelegate.h */,
+				FC8BBC572086D61A0068FC73 /* AppDelegate.m */,
+				FC8BBC6C2086D7100068FC73 /* LondonVC.h */,
+				FC8BBC6D2086D7100068FC73 /* LondonVC.m */,
+				FC8BBC6F2086D7290068FC73 /* LondonCell.h */,
+				FC8BBC702086D7290068FC73 /* LondonCell.m */,
+				FC8BBC722086E25A0068FC73 /* DetailVC.h */,
+				FC8BBC732086E25A0068FC73 /* DetailVC.m */,
+				FC8BBC5C2086D61A0068FC73 /* Main.storyboard */,
+				FC8BBC5F2086D61E0068FC73 /* Assets.xcassets */,
+				FC8BBC612086D61E0068FC73 /* LaunchScreen.storyboard */,
+				FC8BBC642086D61E0068FC73 /* Info.plist */,
+				FC8BBC652086D61E0068FC73 /* main.m */,
+				FC8BBC782086EB030068FC73 /* MapPin.h */,
+				FC8BBC792086EB030068FC73 /* MapPin.m */,
+			);
+			path = LondonLM;
+			sourceTree = "<group>";
+		};
+		FC8BBC752086E7AB0068FC73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC8BBC762086E7AB0068FC73 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC8BBC522086D61A0068FC73 /* LondonLM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8BBC692086D61E0068FC73 /* Build configuration list for PBXNativeTarget "LondonLM" */;
+			buildPhases = (
+				FC8BBC4F2086D61A0068FC73 /* Sources */,
+				FC8BBC502086D61A0068FC73 /* Frameworks */,
+				FC8BBC512086D61A0068FC73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LondonLM;
+			productName = LondonLM;
+			productReference = FC8BBC532086D61A0068FC73 /* LondonLM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC8BBC4B2086D61A0068FC73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Samuel K";
+				TargetAttributes = {
+					FC8BBC522086D61A0068FC73 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FC8BBC4E2086D61A0068FC73 /* Build configuration list for PBXProject "LondonLM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC8BBC4A2086D61A0068FC73;
+			productRefGroup = FC8BBC542086D61A0068FC73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC8BBC522086D61A0068FC73 /* LondonLM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC8BBC512086D61A0068FC73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8BBC632086D61E0068FC73 /* LaunchScreen.storyboard in Resources */,
+				FC8BBC602086D61E0068FC73 /* Assets.xcassets in Resources */,
+				FC8BBC5E2086D61A0068FC73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC8BBC4F2086D61A0068FC73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8BBC7A2086EB030068FC73 /* MapPin.m in Sources */,
+				FC8BBC6E2086D7100068FC73 /* LondonVC.m in Sources */,
+				FC8BBC742086E25A0068FC73 /* DetailVC.m in Sources */,
+				FC8BBC712086D7290068FC73 /* LondonCell.m in Sources */,
+				FC8BBC662086D61E0068FC73 /* main.m in Sources */,
+				FC8BBC582086D61A0068FC73 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC8BBC5C2086D61A0068FC73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8BBC5D2086D61A0068FC73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC8BBC612086D61E0068FC73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8BBC622086D61E0068FC73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC8BBC672086D61E0068FC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC8BBC682086D61E0068FC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC8BBC6A2086D61E0068FC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = LondonLM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.LondonLM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC8BBC6B2086D61E0068FC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = LondonLM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.LondonLM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC8BBC4E2086D61A0068FC73 /* Build configuration list for PBXProject "LondonLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8BBC672086D61E0068FC73 /* Debug */,
+				FC8BBC682086D61E0068FC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8BBC692086D61E0068FC73 /* Build configuration list for PBXNativeTarget "LondonLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8BBC6A2086D61E0068FC73 /* Debug */,
+				FC8BBC6B2086D61E0068FC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC8BBC4B2086D61A0068FC73 /* Project object */;
+}

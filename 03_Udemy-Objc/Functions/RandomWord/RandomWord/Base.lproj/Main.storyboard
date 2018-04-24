@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBA-cr-Ynp">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-JH-fKn">
+                                <rect key="frame" x="16" y="45" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Random word"/>
+                                <connections>
+                                    <action selector="randomWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUx-Rs-8FH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EJ-pZ-NxK">
+                                <rect key="frame" x="16" y="107" width="343" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="6EJ-pZ-NxK" id="jvq-Ag-sSq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+        <!--Fact Bank View Controller-->
+        <scene sceneID="466-Vp-sVT">
+            <objects>
+                <viewController id="JBA-cr-Ynp" customClass="FactBankViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IM6-b6-1W2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Cu1-La-oiO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQK-DB-U1J">
+                                <rect key="frame" x="16" y="20" width="288" height="157"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kx6-jt-TvQ">
+                                <rect key="frame" x="40" y="391" width="239" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kx6-jt-TvQ" secondAttribute="height" multiplier="294:193" id="Q2o-8J-Xbh"/>
+                                </constraints>
+                                <state key="normal" image="Brain"/>
+                                <connections>
+                                    <action selector="randomFact:" destination="JBA-cr-Ynp" eventType="touchUpInside" id="8nP-1p-3FT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Brain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-0a-a2D">
+                                <rect key="frame" x="16" y="185" width="288" height="169"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kx6-jt-TvQ" firstAttribute="leading" secondItem="XPS-81-L8w" secondAttribute="leading" constant="40" id="0kk-o9-mph"/>
+                            <constraint firstItem="YQK-DB-U1J" firstAttribute="leading" secondItem="XPS-81-L8w" secondAttribute="leading" constant="16" id="1is-lA-QeL"/>
+                            <constraint firstItem="Kx6-jt-TvQ" firstAttribute="height" secondItem="YQK-DB-U1J" secondAttribute="height" id="4ob-5h-Zls"/>
+                            <constraint firstItem="Cu1-La-oiO" firstAttribute="leading" secondItem="XPS-81-L8w" secondAttribute="leading" id="7vq-ag-FGC"/>
+                            <constraint firstItem="XPS-81-L8w" firstAttribute="trailing" secondItem="YQK-DB-U1J" secondAttribute="trailing" constant="16" id="9xg-Sp-4ys"/>
+                            <constraint firstItem="XPS-81-L8w" firstAttribute="bottom" secondItem="Cu1-La-oiO" secondAttribute="bottom" id="Ct1-ZQ-fpC"/>
+                            <constraint firstItem="8aA-0a-a2D" firstAttribute="leading" secondItem="XPS-81-L8w" secondAttribute="leading" constant="16" id="Fm1-6N-t3p"/>
+                            <constraint firstItem="XPS-81-L8w" firstAttribute="bottom" secondItem="Kx6-jt-TvQ" secondAttribute="bottom" constant="20" id="Jd1-4c-kFV"/>
+                            <constraint firstItem="XPS-81-L8w" firstAttribute="trailing" secondItem="Cu1-La-oiO" secondAttribute="trailing" id="aRR-f6-NFT"/>
+                            <constraint firstItem="XPS-81-L8w" firstAttribute="trailing" secondItem="Kx6-jt-TvQ" secondAttribute="trailing" constant="41" id="bmB-iI-hLm"/>
+                            <constraint firstItem="YQK-DB-U1J" firstAttribute="top" secondItem="XPS-81-L8w" secondAttribute="top" id="dFM-gR-JAv"/>
+                            <constraint firstItem="Kx6-jt-TvQ" firstAttribute="top" secondItem="8aA-0a-a2D" secondAttribute="bottom" constant="37" id="dut-M0-zjP"/>
+                            <constraint firstItem="XPS-81-L8w" firstAttribute="trailing" secondItem="8aA-0a-a2D" secondAttribute="trailing" constant="16" id="nen-2W-RUU"/>
+                            <constraint firstItem="8aA-0a-a2D" firstAttribute="top" secondItem="YQK-DB-U1J" secondAttribute="bottom" constant="8" id="o7j-4h-wGG"/>
+                            <constraint firstItem="Cu1-La-oiO" firstAttribute="top" secondItem="IM6-b6-1W2" secondAttribute="top" id="xTu-lk-0r2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XPS-81-L8w"/>
+                    </view>
+                    <connections>
+                        <outlet property="factLabel" destination="8aA-0a-a2D" id="qgv-ez-g0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7K-cO-zWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.60000000000002" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Brain" width="460" height="340"/>
+        <image name="background" width="1920" height="1080"/>
+    </resources>
+</document>

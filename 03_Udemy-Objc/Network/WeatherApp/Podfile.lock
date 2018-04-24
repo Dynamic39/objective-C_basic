@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - JSONModel (1.7.0)
+  - Realm (3.4.0):
+    - Realm/Headers (= 3.4.0)
+  - Realm/Headers (3.4.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - JSONModel
+  - Realm
+  - Realm/Headers
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - JSONModel
+    - Realm
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Realm: 9527c7baa2260f3a3aad6823d2d71cafff9b046b
+
+PODFILE CHECKSUM: 050a9c20687810299f1dd2865ee579fba3746a50
+
+COCOAPODS: 1.5.0

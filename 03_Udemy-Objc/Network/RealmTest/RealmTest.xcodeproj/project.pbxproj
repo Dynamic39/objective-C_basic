@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B447BB7EF508FDF03913C65 /* libPods-RealmTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A5E9E45414905A706239C4 /* libPods-RealmTest.a */; };
+		FC3EAE952088A27E007720F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAE942088A27E007720F7 /* AppDelegate.m */; };
+		FC3EAE982088A27E007720F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAE972088A27E007720F7 /* ViewController.m */; };
+		FC3EAE9B2088A27F007720F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3EAE992088A27F007720F7 /* Main.storyboard */; };
+		FC3EAE9D2088A280007720F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3EAE9C2088A280007720F7 /* Assets.xcassets */; };
+		FC3EAEA02088A280007720F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3EAE9E2088A280007720F7 /* LaunchScreen.storyboard */; };
+		FC3EAEA32088A280007720F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAEA22088A280007720F7 /* main.m */; };
+		FC3EAED02089B1FE007720F7 /* RealmTV.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAECF2089B1FE007720F7 /* RealmTV.m */; };
+		FC466FD0208DAD9D0060F79E /* RandomSectionTV.m in Sources */ = {isa = PBXBuildFile; fileRef = FC466FCF208DAD9D0060F79E /* RandomSectionTV.m */; };
+		FC466FD3208DAE820060F79E /* RandomSectionTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC466FD2208DAE820060F79E /* RandomSectionTVCell.m */; };
+		FCFF27A2208DCB4A00C8C729 /* RandomTV.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFF27A1208DCB4A00C8C729 /* RandomTV.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		388089A6C546A468B2F0C540 /* Pods-RealmTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTest/Pods-RealmTest.release.xcconfig"; sourceTree = "<group>"; };
+		38A5E9E45414905A706239C4 /* libPods-RealmTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5B7FB1754D143BC8EF4D0D /* Pods-RealmTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTest/Pods-RealmTest.debug.xcconfig"; sourceTree = "<group>"; };
+		FC3EAE902088A27E007720F7 /* RealmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3EAE932088A27E007720F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC3EAE942088A27E007720F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC3EAE962088A27E007720F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC3EAE972088A27E007720F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC3EAE9A2088A27F007720F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC3EAE9C2088A280007720F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC3EAE9F2088A280007720F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC3EAEA12088A280007720F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3EAEA22088A280007720F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC3EAECE2089B1FE007720F7 /* RealmTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmTV.h; sourceTree = "<group>"; };
+		FC3EAECF2089B1FE007720F7 /* RealmTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmTV.m; sourceTree = "<group>"; };
+		FC466FCE208DAD9D0060F79E /* RandomSectionTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomSectionTV.h; sourceTree = "<group>"; };
+		FC466FCF208DAD9D0060F79E /* RandomSectionTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomSectionTV.m; sourceTree = "<group>"; };
+		FC466FD1208DAE820060F79E /* RandomSectionTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomSectionTVCell.h; sourceTree = "<group>"; };
+		FC466FD2208DAE820060F79E /* RandomSectionTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomSectionTVCell.m; sourceTree = "<group>"; };
+		FCFF27A0208DCB4A00C8C729 /* RandomTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomTV.h; sourceTree = "<group>"; };
+		FCFF27A1208DCB4A00C8C729 /* RandomTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomTV.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3EAE8D2088A27E007720F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B447BB7EF508FDF03913C65 /* libPods-RealmTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B1F4DFF3E511D57D4D06438 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE5B7FB1754D143BC8EF4D0D /* Pods-RealmTest.debug.xcconfig */,
+				388089A6C546A468B2F0C540 /* Pods-RealmTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		387E6A9739B6E09352A59154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38A5E9E45414905A706239C4 /* libPods-RealmTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC3EAE872088A27E007720F7 = {
+			isa = PBXGroup;
+			children = (
+				FC3EAE922088A27E007720F7 /* RealmTest */,
+				FC3EAE912088A27E007720F7 /* Products */,
+				2B1F4DFF3E511D57D4D06438 /* Pods */,
+				387E6A9739B6E09352A59154 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3EAE912088A27E007720F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EAE902088A27E007720F7 /* RealmTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3EAE922088A27E007720F7 /* RealmTest */ = {
+			isa = PBXGroup;
+			children = (
+				FC3EAE932088A27E007720F7 /* AppDelegate.h */,
+				FC3EAE942088A27E007720F7 /* AppDelegate.m */,
+				FC3EAE962088A27E007720F7 /* ViewController.h */,
+				FC3EAE972088A27E007720F7 /* ViewController.m */,
+				FC3EAECE2089B1FE007720F7 /* RealmTV.h */,
+				FC3EAECF2089B1FE007720F7 /* RealmTV.m */,
+				FC466FCE208DAD9D0060F79E /* RandomSectionTV.h */,
+				FC466FCF208DAD9D0060F79E /* RandomSectionTV.m */,
+				FC466FD1208DAE820060F79E /* RandomSectionTVCell.h */,
+				FC466FD2208DAE820060F79E /* RandomSectionTVCell.m */,
+				FCFF27A0208DCB4A00C8C729 /* RandomTV.h */,
+				FCFF27A1208DCB4A00C8C729 /* RandomTV.m */,
+				FC3EAE992088A27F007720F7 /* Main.storyboard */,
+				FC3EAE9C2088A280007720F7 /* Assets.xcassets */,
+				FC3EAE9E2088A280007720F7 /* LaunchScreen.storyboard */,
+				FC3EAEA12088A280007720F7 /* Info.plist */,
+				FC3EAEA22088A280007720F7 /* main.m */,
+			);
+			path = RealmTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC3EAE8F2088A27E007720F7 /* RealmTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3EAEA62088A280007720F7 /* Build configuration list for PBXNativeTarget "RealmTest" */;
+			buildPhases = (
+				18CC46A8026D9A9A7DAA14DC /* [CP] Check Pods Manifest.lock */,
+				FC3EAE8C2088A27E007720F7 /* Sources */,
+				FC3EAE8D2088A27E007720F7 /* Frameworks */,
+				FC3EAE8E2088A27E007720F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealmTest;
+			productName = RealmTest;
+			productReference = FC3EAE902088A27E007720F7 /* RealmTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3EAE882088A27E007720F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Samuel K";
+				TargetAttributes = {
+					FC3EAE8F2088A27E007720F7 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = FC3EAE8B2088A27E007720F7 /* Build configuration list for PBXProject "RealmTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC3EAE872088A27E007720F7;
+			productRefGroup = FC3EAE912088A27E007720F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3EAE8F2088A27E007720F7 /* RealmTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC3EAE8E2088A27E007720F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3EAEA02088A280007720F7 /* LaunchScreen.storyboard in Resources */,
+				FC3EAE9D2088A280007720F7 /* Assets.xcassets in Resources */,
+				FC3EAE9B2088A27F007720F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18CC46A8026D9A9A7DAA14DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3EAE8C2088A27E007720F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3EAE982088A27E007720F7 /* ViewController.m in Sources */,
+				FC3EAEA32088A280007720F7 /* main.m in Sources */,
+				FC466FD3208DAE820060F79E /* RandomSectionTVCell.m in Sources */,
+				FC3EAE952088A27E007720F7 /* AppDelegate.m in Sources */,
+				FCFF27A2208DCB4A00C8C729 /* RandomTV.m in Sources */,
+				FC3EAED02089B1FE007720F7 /* RealmTV.m in Sources */,
+				FC466FD0208DAD9D0060F79E /* RandomSectionTV.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC3EAE992088A27F007720F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3EAE9A2088A27F007720F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC3EAE9E2088A280007720F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3EAE9F2088A280007720F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC3EAEA42088A280007720F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC3EAEA52088A280007720F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC3EAEA72088A280007720F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE5B7FB1754D143BC8EF4D0D /* Pods-RealmTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = RealmTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.RealmTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC3EAEA82088A280007720F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 388089A6C546A468B2F0C540 /* Pods-RealmTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
+				INFOPLIST_FILE = RealmTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.RealmTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3EAE8B2088A27E007720F7 /* Build configuration list for PBXProject "RealmTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3EAEA42088A280007720F7 /* Debug */,
+				FC3EAEA52088A280007720F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3EAEA62088A280007720F7 /* Build configuration list for PBXNativeTarget "RealmTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3EAEA72088A280007720F7 /* Debug */,
+				FC3EAEA82088A280007720F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3EAE882088A27E007720F7 /* Project object */;
+}
