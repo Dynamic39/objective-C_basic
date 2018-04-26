@@ -7,24 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SDWebImage/UIImageView+WebCache.h>
-#import <SDWebImageManager.h>
-#import <SDImageCache.h>
 
-@interface ViewController : UIViewController
-
-
-@property (weak, nonatomic) IBOutlet UIImageView *SDImageview;
-@property (weak, nonatomic) IBOutlet UIImageView *sdsampleImageview;
-
-- (IBAction)saveImageBtn:(id)sender;
-
-//SDImage manager 관련,
-@property (nonatomic, nonnull, readonly) SDImageCacheConfig *config;
-@property (assign, nonatomic) NSUInteger maxMemoryCost;
-@property (assign, nonatomic) NSUInteger maxMemoryCountLimit;
-
-
+@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 
 @end

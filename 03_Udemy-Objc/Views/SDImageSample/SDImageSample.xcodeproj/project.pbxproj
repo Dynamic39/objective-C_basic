@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E108928E494181871C009716 /* libPods-SDImageSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6D333C4D80398A196FF356 /* libPods-SDImageSample.a */; };
+		FC3F562720916B9400BD2319 /* SDWebImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F562620916B9400BD2319 /* SDWebImageCell.m */; };
 		FCFF27D4208DFD9700C8C729 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFF27D3208DFD9700C8C729 /* AppDelegate.m */; };
 		FCFF27D7208DFD9700C8C729 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFF27D6208DFD9700C8C729 /* ViewController.m */; };
 		FCFF27DA208DFD9700C8C729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFF27D8208DFD9700C8C729 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		3B6D333C4D80398A196FF356 /* libPods-SDImageSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDImageSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0985FE2FC9A62E66A459BC /* Pods-SDImageSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImageSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDImageSample/Pods-SDImageSample.release.xcconfig"; sourceTree = "<group>"; };
 		5A5C77DCEAB2F7C3DCD350D7 /* Pods-SDImageSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDImageSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDImageSample/Pods-SDImageSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FC3F562520916B9400BD2319 /* SDWebImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageCell.h; sourceTree = "<group>"; };
+		FC3F562620916B9400BD2319 /* SDWebImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCell.m; sourceTree = "<group>"; };
 		FCFF27CF208DFD9700C8C729 /* SDImageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDImageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFF27D2208DFD9700C8C729 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCFF27D3208DFD9700C8C729 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				FCFF27D3208DFD9700C8C729 /* AppDelegate.m */,
 				FCFF27D5208DFD9700C8C729 /* ViewController.h */,
 				FCFF27D6208DFD9700C8C729 /* ViewController.m */,
+				FC3F562520916B9400BD2319 /* SDWebImageCell.h */,
+				FC3F562620916B9400BD2319 /* SDWebImageCell.m */,
 				FCFF27D8208DFD9700C8C729 /* Main.storyboard */,
 				FCFF27DB208DFD9900C8C729 /* Assets.xcassets */,
 				FCFF27DD208DFD9900C8C729 /* LaunchScreen.storyboard */,
@@ -190,6 +195,7 @@
 				FCFF27D7208DFD9700C8C729 /* ViewController.m in Sources */,
 				FCFF27E2208DFD9900C8C729 /* main.m in Sources */,
 				FCFF27D4208DFD9700C8C729 /* AppDelegate.m in Sources */,
+				FC3F562720916B9400BD2319 /* SDWebImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +339,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = SDImageSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SDImageSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +357,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = SDImageSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SamuelK.SDImageSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
