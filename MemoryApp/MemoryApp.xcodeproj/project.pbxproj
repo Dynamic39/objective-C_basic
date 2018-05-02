@@ -13,6 +13,7 @@
 		FC3F561D20903B9200BD2319 /* MemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F561C20903B9200BD2319 /* MemoCell.m */; };
 		FC3F562120906FE100BD2319 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F562020906FE100BD2319 /* SWRevealViewController.m */; };
 		FC3F56242090729500BD2319 /* SideBarTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F56232090729500BD2319 /* SideBarTVC.m */; };
+		FC6FC3582093165700723FD6 /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6FC3572093165700723FD6 /* ProfileVC.m */; };
 		FCD309C5208EF853006C71A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD309C4208EF853006C71A7 /* AppDelegate.m */; };
 		FCD309CB208EF853006C71A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD309C9208EF853006C71A7 /* Main.storyboard */; };
 		FCD309CD208EF855006C71A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD309CC208EF855006C71A7 /* Assets.xcassets */; };
@@ -59,6 +60,8 @@
 		FC3F562020906FE100BD2319 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		FC3F56222090729500BD2319 /* SideBarTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBarTVC.h; sourceTree = "<group>"; };
 		FC3F56232090729500BD2319 /* SideBarTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarTVC.m; sourceTree = "<group>"; };
+		FC6FC3562093165700723FD6 /* ProfileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
+		FC6FC3572093165700723FD6 /* ProfileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		FCD309C0208EF853006C71A7 /* MemoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD309C3208EF853006C71A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCD309C4208EF853006C71A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 				FCD309FF208F0225006C71A7 /* MemoReadVC.m */,
 				FC3F56222090729500BD2319 /* SideBarTVC.h */,
 				FC3F56232090729500BD2319 /* SideBarTVC.m */,
+				FC6FC3562093165700723FD6 /* ProfileVC.h */,
+				FC6FC3572093165700723FD6 /* ProfileVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				FC3F562120906FE100BD2319 /* SWRevealViewController.m in Sources */,
 				FCD309FD208F0216006C71A7 /* MemoFormVC.m in Sources */,
 				FCD309C5208EF853006C71A7 /* AppDelegate.m in Sources */,
+				FC6FC3582093165700723FD6 /* ProfileVC.m in Sources */,
 				FCD30A03208F030C006C71A7 /* MemoData.m in Sources */,
 				FC3F56242090729500BD2319 /* SideBarTVC.m in Sources */,
 				FC3F561D20903B9200BD2319 /* MemoCell.m in Sources */,
