@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ChatListCell.h
 //  FireChat
 //
 //  Created by Samuel K on 2018. 4. 26..
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ChatListCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *addedChatLabel;
 
 @end
-

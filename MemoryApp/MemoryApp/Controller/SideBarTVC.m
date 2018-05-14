@@ -10,89 +10,150 @@
 
 @interface SideBarTVC ()
 
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray <UIImage *> *icons;
+
+@property (nonatomic, strong) IBOutlet UILabel *nameLabel;
+@property (nonatomic, strong) IBOutlet UILabel *emailLabel;
+@property (nonatomic, strong) IBOutlet UIImageView *profileImageView;
+
 @end
 
 @implementation SideBarTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
+  [self setupUIandData];
+  [self loadUserProfile];
+  [self addHeaderView];
 }
+
+- (void) setupUIandData {
+  
+  self.titles = @[@"새글 작성하기", @"친구 새글", @"달력으로 보기", @"통계", @"계정 관리"];
+  self.icons = @[[UIImage imageNamed:@"icon01"], [UIImage imageNamed:@"icon02"], [UIImage imageNamed:@"icon03"], [UIImage imageNamed:@"icon04"], [UIImage imageNamed:@"icon05"], [UIImage imageNamed:@"icon06"]];
+  
+  self.nameLabel = [UILabel new];
+  self.emailLabel = [UILabel new];
+  self.profileImageView = [UIImageView new];
+  
+}
+
+-(void)loadUserProfile {
+  
+  if (self.nameLabel.text == nil) {
+    self.nameLabel.text = @"Guest";
+    self.emailLabel.text = @"";
+    self.profileImageView.image = [UIImage imageNamed:@"account"];
+  } else {
+   
+    //Realm을 통하여 데이터를 읽어온다.
+    
+    
+  }
+}
+
+-(void)addHeaderView {
+  
+  UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 70)];
+  headerView.backgroundColor = UIColor.brownColor;
+  self.tableView.tableHeaderView = headerView;
+  
+  //기본 정보 추가
+  self.nameLabel.frame = CGRectMake(70, 15, (headerView.frame.size.width/3)*2, 30);
+  self.nameLabel.textAlignment = NSTextAlignmentLeft;
+  self.nameLabel.textColor = UIColor.whiteColor;
+  self.nameLabel.font = [UIFont boldSystemFontOfSize:15];
+  self.nameLabel.backgroundColor = UIColor.clearColor;
+  
+  [headerView addSubview:self.nameLabel];
+  
+  
+  self.emailLabel.frame = CGRectMake(70, 30, (headerView.frame.size.width/3)*2, 30);
+  self.emailLabel.textAlignment = NSTextAlignmentLeft;
+  self.emailLabel.font = [UIFont boldSystemFontOfSize:15];
+  self.emailLabel.backgroundColor = UIColor.clearColor;
+  
+  [headerView addSubview:self.nameLabel];
+  
+  self.profileImageView.frame = CGRectMake(10, 10, 50, 50);
+  
+  self.profileImageView.layer.cornerRadius = (self.profileImageView.frame.size.width /2);
+  self.profileImageView.layer.borderWidth = 0;
+  self.profileImageView.layer.masksToBounds = true;
+  
+  [self.view addSubview:self.profileImageView];
+  
+  
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+  return self.titles.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSString *cellIdentifier = @"menucell";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+  
+  cell.textLabel.text = self.titles[indexPath.row];
+  cell.imageView.image = self.icons[indexPath.row];
+  
+  cell.textLabel.font = [UIFont systemFontOfSize:14];
+  
+  return cell;
+  
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  if (indexPath.row == 0) {
     
-    // Configure the cell...
+    UIViewController *uv = [UIViewController new];
+    uv = [self.storyboard instantiateViewControllerWithIdentifier:@"MemoForm"];
+    UINavigationController *target = self.revealViewController.frontViewController;
     
-    return cell;
+    [target pushViewController:uv animated:YES];
+    [self.revealViewController revealToggle:self];
+    
+  } else if (indexPath.row == 4) {
+    
+    UIViewController *uv = [UIViewController new];
+    uv = [self.storyboard instantiateViewControllerWithIdentifier:@"_profile"];
+    
+    [self presentViewController:uv animated:YES completion:^{
+      [self.revealViewController revealToggle:self];
+    }];
+    
+    
+  }
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

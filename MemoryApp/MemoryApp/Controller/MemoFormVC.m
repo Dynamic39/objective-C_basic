@@ -39,12 +39,14 @@
 - (void)dataDelegateHandler
 {
   
-  self.passToMainListData.title = self.titleTF.text;
-  self.passToMainListData.contents = self.mainTextview.text;
-  self.passToMainListData.regDate = [[NSDate alloc] init];
-  self.passToMainListData.image = self.mainImageView.image;
-  NSLog(@"titleTF: %@", self.titleTF.text);
-  NSLog(@"titleTF: %@", self.mainTextview.text);
+  if (![self.titleTF.text isEqualToString:@""]) {
+    
+    self.passToMainListData.title = self.titleTF.text;
+    self.passToMainListData.contents = self.mainTextview.text;
+    self.passToMainListData.regDate = [[NSDate alloc] init];
+    self.passToMainListData.image = self.mainImageView.image;
+    
+  }
   
 }
 

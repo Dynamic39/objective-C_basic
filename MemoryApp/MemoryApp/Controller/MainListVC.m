@@ -90,15 +90,21 @@
 - (void)dataHandler:(MemoData *)MemoDataModel
 {
   
-  self.dataTaken = MemoDataModel;
+  if (MemoDataModel.title != nil) {
+    
+    self.dataTaken = MemoDataModel;
+    
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [MemoRealm createInRealm:realm withValue:@{@"title":self.dataTaken.title,
+                                               @"contents":self.dataTaken.contents,
+                                               @"regDate":self.dataTaken.regDate
+                                               }];
+    [realm commitWriteTransaction];
+    
+  }
   
-  RLMRealm *realm = [RLMRealm defaultRealm];
-  [realm beginWriteTransaction];
-  [MemoRealm createInRealm:realm withValue:@{@"title":self.dataTaken.title,
-                                             @"contents":self.dataTaken.contents,
-                                             @"regDate":self.dataTaken.regDate
-                                             }];
-  [realm commitWriteTransaction];
+  
 }
 
 
@@ -116,6 +122,8 @@
   
   MemoRealm *object = self.array[indexPath.row];
   detailVC.detailtextString = object.title;
+  NSLog(@"오브젝트 : %@", object.title);
+  NSLog(@"디테일 VC : %@", detailVC.detailtextString);
   detailVC.textviewString = object.contents;
   
   
