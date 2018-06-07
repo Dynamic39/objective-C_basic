@@ -14,8 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *detailtextview;
 @property (weak, nonatomic) IBOutlet UIImageView *detailImageview;
 
-@property (weak, nonatomic) NSString *detailtextString;
-@property (weak, nonatomic) NSString *textviewString;
+@property (strong, nonatomic) NSString *detailtextString;
+@property (strong, nonatomic) NSString *textviewString;
 
 
 @end

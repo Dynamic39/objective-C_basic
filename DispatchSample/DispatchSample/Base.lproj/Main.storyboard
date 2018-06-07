@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="or3-aF-WKQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-V2-qgo">
+                                <rect key="frame" x="16" y="50" width="343" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLR-bF-bHc">
+                                <rect key="frame" x="59" y="465" width="256" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start Task"/>
+                                <connections>
+                                    <action selector="startTask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmq-WG-bJx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBt-CU-f7e">
+                                <rect key="frame" x="59" y="542" width="256" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Stop Task"/>
+                                <connections>
+                                    <action selector="stopTask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ub-Z5-CXr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="runnningTaskCountLabel" destination="gJF-V2-qgo" id="cwG-Da-UWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-484" y="217"/>
+        </scene>
+        <!--OperationVC-->
+        <scene sceneID="h9J-fd-BSI">
+            <objects>
+                <viewController id="IBs-sf-lnc" customClass="operationVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1e-ZC-BXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edR-h0-eAz">
+                                <rect key="frame" x="83" y="79" width="208" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Concurrent Operation"/>
+                                <connections>
+                                    <action selector="performConcurrentMode:" destination="IBs-sf-lnc" eventType="touchUpInside" id="Sev-Oe-fyb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE5-5L-wk7">
+                                <rect key="frame" x="83" y="173" width="208" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Serial Operation"/>
+                                <connections>
+                                    <action selector="performSerialMode:" destination="IBs-sf-lnc" eventType="touchUpInside" id="QNy-IL-XBg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBD-nY-lin">
+                                <rect key="frame" x="83" y="274" width="208" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel All Operation"/>
+                                <connections>
+                                    <action selector="cancelAllOpeations:" destination="IBs-sf-lnc" eventType="touchUpInside" id="kJZ-wz-ihq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lR7-7M-F93"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAW-Gl-Xeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="216"/>
+        </scene>
+        <!--GcdVC-->
+        <scene sceneID="VTA-B7-51Z">
+            <objects>
+                <viewController id="BFy-SV-TAo" customClass="GcdVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nen-Az-N8t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-fy-JBw">
+                                <rect key="frame" x="16" y="30" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Task Synchronously to Serial Queue"/>
+                                <connections>
+                                    <action selector="submitTaskSynchronnouslyToSerialQueue:" destination="BFy-SV-TAo" eventType="touchUpInside" id="Dro-Gt-cFe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tG7-gG-wh7">
+                                <rect key="frame" x="13" y="72" width="343" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Task Synchronously to Concurrent Queue"/>
+                                <connections>
+                                    <action selector="submitTaskSynchronouslyToConcurrentQueue:" destination="BFy-SV-TAo" eventType="touchUpInside" id="UDa-Ql-qPb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6c-j4-s1L">
+                                <rect key="frame" x="13" y="105" width="348" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Task Asynchronously To Concurrent Queue"/>
+                                <connections>
+                                    <action selector="submitTaskAsynchronouslyToConcurrentQueue:" destination="BFy-SV-TAo" eventType="touchUpInside" id="9wk-jR-18q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X7-87-9Rj">
+                                <rect key="frame" x="97" y="149" width="175" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvo-F3-ngu">
+                                <rect key="frame" x="13" y="186" width="348" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Run Background Task and Update!"/>
+                                <connections>
+                                    <action selector="runBackgroundTaskAndUpdateUI:" destination="BFy-SV-TAo" eventType="touchUpInside" id="OV8-nD-lhH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTW-Vq-4yk">
+                                <rect key="frame" x="13" y="223" width="346" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Run Task Group and Wait"/>
+                                <connections>
+                                    <action selector="runTaskGroupAndWait:" destination="BFy-SV-TAo" eventType="touchUpInside" id="QhW-Dh-CQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Q-YM-Ft2">
+                                <rect key="frame" x="16" y="261" width="346" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Run Task Group and Notify"/>
+                                <connections>
+                                    <action selector="runTaskGropuAndNotify:" destination="BFy-SV-TAo" eventType="touchUpInside" id="3ij-zV-Q6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYK-K7-69T">
+                                <rect key="frame" x="32" y="318" width="315" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Semaphore"/>
+                                <connections>
+                                    <action selector="synchronizeWithSemaphore:" destination="BFy-SV-TAo" eventType="touchUpInside" id="NXK-ss-qkv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnP-7A-hE7">
+                                <rect key="frame" x="16" y="356" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Concurrent Loop"/>
+                                <connections>
+                                    <action selector="runConcurrentLoop:" destination="BFy-SV-TAo" eventType="touchUpInside" id="xhp-4h-mYj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TQz-IY-gRt"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="1X7-87-9Rj" id="kwY-Bq-YBe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNL-Ys-l0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="214.54272863568218"/>
+        </scene>
+        <!--URL SchmeVC-->
+        <scene sceneID="M00-nY-n1L">
+            <objects>
+                <viewController id="jzD-RX-T4b" customClass="URLSchmeVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YCc-fv-iQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q4-VM-8QT">
+                                <rect key="frame" x="89" y="54" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="openWebsite:" destination="jzD-RX-T4b" eventType="touchUpInside" id="n4q-lB-3QK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmP-WA-64b">
+                                <rect key="frame" x="90" y="103" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Email"/>
+                                <connections>
+                                    <action selector="openEmail:" destination="jzD-RX-T4b" eventType="touchUpInside" id="ilv-dy-fjK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VO6-gv-azc">
+                                <rect key="frame" x="90" y="159" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Phone"/>
+                                <connections>
+                                    <action selector="openPhone:" destination="jzD-RX-T4b" eventType="touchUpInside" id="cdq-yG-fQm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbS-T6-MTk">
+                                <rect key="frame" x="89" y="215" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SMS"/>
+                                <connections>
+                                    <action selector="openSMS:" destination="jzD-RX-T4b" eventType="touchUpInside" id="CUV-Mc-L7I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-QY-RKQ">
+                                <rect key="frame" x="90" y="271" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FaceTime"/>
+                                <connections>
+                                    <action selector="openFaceTime:" destination="jzD-RX-T4b" eventType="touchUpInside" id="aMq-kN-ufe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25o-Aj-6aJ">
+                                <rect key="frame" x="89" y="327" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FaceAudio"/>
+                                <connections>
+                                    <action selector="openFaceAudio:" destination="jzD-RX-T4b" eventType="touchUpInside" id="gX4-rI-cRs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbv-vE-EPG">
+                                <rect key="frame" x="90" y="447" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="App Store"/>
+                                <connections>
+                                    <action selector="openAppStore:" destination="jzD-RX-T4b" eventType="touchUpInside" id="xuk-TP-UwJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aB-tB-Hl6">
+                                <rect key="frame" x="89" y="379" width="196" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="openMap:" destination="jzD-RX-T4b" eventType="touchUpInside" id="glN-ZS-r6L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="weT-uu-dOz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noM-tB-Oio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="215"/>
+        </scene>
+        <!--BlockVC-->
+        <scene sceneID="W3S-H5-VgY">
+            <objects>
+                <viewController id="or3-aF-WKQ" customClass="BlockVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5u-gw-9Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LIt-ed-NUM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zA-Ig-6Dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2671" y="216"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,6 +10,7 @@
 #import "ChatCell.h"
 #import "Channel.h"
 #import "ChatListCell.h"
+#import "ChatVC.h"
 
 
 @interface ChannelListVC : UITableViewController

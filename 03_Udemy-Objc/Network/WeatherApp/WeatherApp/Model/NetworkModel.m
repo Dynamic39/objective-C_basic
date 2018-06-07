@@ -10,6 +10,8 @@
 #import "MyJSONM.h"
 #import "ViewController.h"
 
+#define SAMPLE(A,B,C) [NSString stringWithFormat:@"%@,%@,%@",A,B,C]
+
 @implementation NetworkModel
 
 - (void)dataLoadingFromWeblatitude:(NSNumber*)lati logitude:(NSNumber*)longi
@@ -18,6 +20,11 @@
   NSDictionary *parameters = @{@"lat":lati, @"lon":longi,
                                @"APPID":@"b833dd8430700d288b31b46d14e3e28f"
                                };
+
+    
+    
+    
+    
   //매니저 호출
   AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
   manager.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -33,8 +40,9 @@
     self.networkSampleString = @"스트링을 불러 올 수 있는지 테스트 합니다.";
     NSError *jsonErr;
     self.myDataModel = [[MyJSONM alloc] initWithDictionary:userInfo error:&jsonErr];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"noti1" object:nil userInfo:userInfo];
+      
+      //Notification 을 활용하여, Network상 받은 데이터를 송출한다.
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"noti1" object:userInfo];
     
   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     

@@ -24,7 +24,7 @@ static NSString *cellIdentifier1 = @"ExistingChannel";
 
 @property (nonatomic, strong) NSString *senderDisplayName;
 @property (nonatomic, strong) NSString *textfieldString;
-@property (nonatomic, strong) NSArray <Channel *> *channels;
+@property (nonatomic, strong) NSMutableArray <Channel *> *channels;
 
 //Firebase Data reference
 @property (strong, nonatomic) FIRDatabaseReference *channelRef;
@@ -38,10 +38,12 @@ static NSString *cellIdentifier1 = @"ExistingChannel";
     [super viewDidLoad];
   self.navigationController.navigationBar.hidden = NO;
   
-  
+  self.channelRef = [[FIRDatabase database] reference];
+  [FIRDatabase.database.reference child:@"channels"];
+  self.channels = [NSMutableArray new]; // 초기화를 꼭..해줘야함.. ㅠ
   [self observeChnnels];
-
-
+  
+  
   
 }
 
@@ -53,7 +55,8 @@ static NSString *cellIdentifier1 = @"ExistingChannel";
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:YES];
   
-  self.channelRef = [[FIRDatabase database] reference];
+  
+  
   
 
 }
@@ -64,32 +67,63 @@ static NSString *cellIdentifier1 = @"ExistingChannel";
 
 -(void)observeChnnels {
   
-  NSString *userID = [FIRAuth auth].currentUser.uid;
-  [[[_channelRef child:@"users"] child:userID] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+  [self.channelRef observeEventType:FIRDataEventTypeChildAdded withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
     
     NSDictionary *channelData = snapshot.value;
+    NSLog(@"%@", snapshot.value);
     NSString *id = snapshot.key;
-    
     NSString *name = channelData[@"name"];
+    
     if (name != nil) {
-     
-      Channel *chatRood = [Channel new];
-      chatRood.ID = id;
-      chatRood.name = name;
       
+      Channel *firCh = [[Channel alloc] init];
+      firCh.ID = id;
+      firCh.name = name;
+      [self.channels addObject:firCh];
       [self.tableView reloadData];
+    } else {
+      NSLog(@"ERROR FOR FIREBASE DATA");
       
     }
   }];
   
   
   
+}
+
+#pragma Helper
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
   
+  if ([segue.identifier isEqualToString:@"showChannel"])
+  {
+    ChatVC *chatVC = [segue destinationViewController];
+    
+    
+  }
   
 }
 
 
 #pragma mark - Table view data source
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  
+  if (indexPath.section == 1) {
+    
+    Channel *channel = self.channels[indexPath.row];
+    
+    ChatVC *chatvc = [self.storyboard instantiateViewControllerWithIdentifier:@"ChatVC"];
+    //chatvc.senderDiplayName =
+    chatvc.channel = channel;
+    chatvc.channelRef = [self.channelRef child:channel.ID];
+    
+    //[self performSegueWithIdentifier:@"ShowChannel" sender:channel];
+    [self.navigationController pushViewController:chatvc animated:YES];
+  }
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

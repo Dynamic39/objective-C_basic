@@ -7,7 +7,8 @@
 //
 
 #import "RandomTV.h"
-#import <Realm.h>
+#import "TableDB.h"
+
 
 /*
  1. Realm DataModel을 활용한 TableView를 만들어보자.
@@ -16,22 +17,16 @@
  4. Background Thread를 활용하여 진한다.
  */
 
-@interface TableDB : RLMObject
 
-@property NSString *title;
-@property NSDate *date;
-
-@end
-
-@implementation TableDB
-
-@end
 
 @interface RandomTV ()
 
 @property RLMResults *array;
 //새로고침 할 notification
 @property RLMNotificationToken *notification;
+@property GroupParent *parent;
+
+@property (nonatomic, strong) TableDB *sampleObject;
 
 @end
 
@@ -39,6 +34,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
+  
+  self.parent = [GroupParent new];
   
   //array 설정 - 날짜기준으로 정렬됨
   self.array = [[TableDB allObjects] sortedResultsUsingKeyPath:@"date" ascending:YES];
@@ -54,6 +52,7 @@
     
   }];
   
+    
   
 }
 
@@ -76,7 +75,7 @@
   //RLMObject를 indexPath로 초기화 하여 준다.
   TableDB *object = self.array[indexPath.row];
   
-  cell.textLabel.text = object.title;
+  cell.textLabel.text = object.titleName;
   cell.detailTextLabel.text = object.date.description;
   
   return cell;
@@ -99,7 +98,7 @@
 //랜덤으로 스트링과 날짜를 생성되는 메서드를 구현한다.
 
 -(NSString *)randomString {
-  return [NSString stringWithFormat:@"임의 생성 문자 (%u)", arc4random()];
+  return [NSString stringWithFormat:@"임의 생성 문자 (%u) + %@", arc4random()];
 }
 
 -(NSDate *)randomDate {
@@ -128,15 +127,30 @@
       //5개의 랜덤한 Cell을 만들어 보자.
       for (NSInteger i = 0; i < 5; i++) {
         [TableDB createInRealm:realm withValue:@{
-                                                 @"title":[self randomString],
+                                                 @"titleName":[self randomString],
                                                  @"date":[self randomDate]
                                                  }];
+      
+      //Realm Array를 만들어 준다.
+        
+//      [self.parent.groups addObject: [Group createInRealm:realm withValue:@{
+//                                                                            @"name":[NSString stringWithFormat:@"Section = %i", arc4random()],
+//                                                                            @"entries":@{@"title":[self randomString],
+//                                                                                         @"date":[self randomDate]
+//                                                                                         }
+//                                                                            }]];
+      
+      
+      
+      
+      
       }
-      [realm commitWriteTransaction];
+        [realm commitWriteTransaction];
     }
-    
   });
 }
+                 
+                
 
 
 - (IBAction)oneAddAction:(id)sender {
@@ -153,7 +167,7 @@
   RLMRealm *realm = [RLMRealm defaultRealm];
   [realm beginWriteTransaction]; // data model 입력 시작 전 명령어
   [TableDB createInRealm:realm withValue:@{
-                                          @"title":[self randomString],
+                                          @"titleName":[self randomString],
                                           @"date":[self randomDate]
                                           }]; // realm 모델에 data 넣어주기, 기본적으로 array형태로 들어간다.
   [realm commitWriteTransaction]; // commit 실행하여 데이터 넣기 종료

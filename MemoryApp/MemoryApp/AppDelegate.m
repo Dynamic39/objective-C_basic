@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MemoData.h"
+#import "MEMO_TB.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +20,35 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
   MemoData *basicMemo;
-  
-  
+    
+    [self migrationForRealm];
+    
   return YES;
+}
+
+-(void)migrationForRealm {
+    
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    config.schemaVersion = 1;
+    
+    config.migrationBlock = ^(RLMMigration * _Nonnull migration, uint64_t oldSchemaVersion) {
+        
+        if (oldSchemaVersion < 1) {
+            
+            [migration enumerateObjects:MEMO_TB.className block:^(RLMObject * _Nullable oldObject, RLMObject * _Nullable newObject) {
+                
+                newObject[@"REG_DATE"] = oldObject[@"regDate"];
+                newObject[@"CONVERTED_IMAGE"] = oldObject[@"convertedImage"];
+                
+            }];
+            
+        }
+    };
+    
+    [RLMRealmConfiguration setDefaultConfiguration:config];
+    
+    
+    
 }
 
 

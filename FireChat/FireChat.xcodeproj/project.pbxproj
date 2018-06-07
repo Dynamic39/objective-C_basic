@@ -23,6 +23,7 @@
 		FC3F56892091B15F00BD2319 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F56882091B15F00BD2319 /* ChatCell.m */; };
 		FC3F568C2091B34900BD2319 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3F568B2091B34900BD2319 /* Channel.m */; };
 		FC6FC3552091CD4C00723FD6 /* ChatListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6FC3542091CD4C00723FD6 /* ChatListCell.m */; };
+		FC6FC35B20995DAB00723FD6 /* ChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6FC35A20995DAB00723FD6 /* ChatVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		FC3F568B2091B34900BD2319 /* Channel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
 		FC6FC3532091CD4C00723FD6 /* ChatListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatListCell.h; sourceTree = "<group>"; };
 		FC6FC3542091CD4C00723FD6 /* ChatListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatListCell.m; sourceTree = "<group>"; };
+		FC6FC35920995DAB00723FD6 /* ChatVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatVC.h; sourceTree = "<group>"; };
+		FC6FC35A20995DAB00723FD6 /* ChatVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,8 @@
 				FC3F567F2091985500BD2319 /* LoginVC.m */,
 				FC3F56842091A33200BD2319 /* ChannelListVC.h */,
 				FC3F56852091A33200BD2319 /* ChannelListVC.m */,
+				FC6FC35920995DAB00723FD6 /* ChatVC.h */,
+				FC6FC35A20995DAB00723FD6 /* ChatVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				FC3F568C2091B34900BD2319 /* Channel.m in Sources */,
 				FC3F565420918ECE00BD2319 /* main.m in Sources */,
 				FC3F564620918ECB00BD2319 /* AppDelegate.m in Sources */,
+				FC6FC35B20995DAB00723FD6 /* ChatVC.m in Sources */,
 				FC3F56892091B15F00BD2319 /* ChatCell.m in Sources */,
 				FC3F56802091985500BD2319 /* LoginVC.m in Sources */,
 				FC6FC3552091CD4C00723FD6 /* ChatListCell.m in Sources */,

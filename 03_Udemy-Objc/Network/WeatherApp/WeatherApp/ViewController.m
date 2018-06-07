@@ -60,6 +60,9 @@
   [super viewDidLoad];
   
   NSLog(@"viewDidLoad!!");
+    
+    //Test Code
+    
   
   seoulWeatherData = [[NetworkModel alloc] init]; // 초기화
   //seoulWeatherData.dataLoadingFromWeb 해도 동작을 같으나, 데이터를 사용하지 않기 때문에 에러 마크가 뜬다.
@@ -91,14 +94,21 @@
   NSLog(@"viewDidAppear!!");
   //View들이 구성되고 나서 UI를 넣어줌
   [[NSNotificationCenter defaultCenter] addObserver:self   selector:@selector(printJSONtoDictionaryNotification:) name:@"noti1" object:nil];
+    
+
   
 }
 
 //Data를 저장하는 곳
 //JSON Model 클래스가 생성되면
+//Notification을 observe하면 생성되는 Notification helper methods
 -(void)printJSONtoDictionaryNotification:(NSNotification *)notification
 {
   
+    
+    NSDictionary *sampleData = notification.userInfo;
+    //상기 파일을 가지고 대응이 가능하다. 이 파일을 바로 realm에 넣어주는 것도 가능하다.
+    
   //현재 JSON MODEL 제대로 사용 못하고 있음
   //초기화 하는 방법 중 하나로, 메서드를 설정하고, 그 메서드를 실행 후, 사용 하고 있음.
   //JSON 모델에 대해서 다시한번 확인 및 적용 할 것.

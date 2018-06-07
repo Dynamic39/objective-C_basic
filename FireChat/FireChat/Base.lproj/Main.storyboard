@@ -79,7 +79,7 @@
         <scene sceneID="2rg-fh-Sua">
             <objects>
                 <tableViewController id="AfZ-rk-KgS" customClass="ChannelListVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IFH-3k-Jod">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IFH-3k-Jod">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -146,8 +146,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="AfZ-rk-KgS" id="YbM-e3-fhb"/>
-                            <outlet property="delegate" destination="AfZ-rk-KgS" id="oy7-02-1tq"/>
+                            <outlet property="dataSource" destination="AfZ-rk-KgS" id="2ra-GL-YK7"/>
+                            <outlet property="delegate" destination="AfZ-rk-KgS" id="eZy-eV-s78"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1yD-yH-3Bq">
@@ -157,10 +157,28 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="jnd-S7-4XA" kind="show" identifier="showChannel" id="tQA-be-VUu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8e-TO-vw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3008.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="FSx-fZ-a9T">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" id="jnd-S7-4XA" customClass="ChatVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XII-XC-VFX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gYv-HU-ydr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7s-8x-fgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3844" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="coM-ZT-evz">
